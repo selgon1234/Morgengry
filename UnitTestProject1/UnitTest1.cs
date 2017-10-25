@@ -1,7 +1,9 @@
 ﻿using System;
+using static Morgengry.Amulet;
+using Morgengry;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+namespace Morgengry
 {
     [TestClass]
     public class UnitTest1

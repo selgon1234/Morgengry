@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class Amulet
+    public class Amulet
     {
         string ItemID;
         string Design;
-        enum Level { low, medium, high}
+        public enum Level { low, medium, high}
         Level Quality;
 
-        public Amulet(string ItemID)
+        public Amulet(string itemID)
         {
-
+            ItemID = itemID;
         }
-        public Amulet(string ItemID, string Design)
+        public Amulet(string itemID, Level quality)
         {
-
+            ItemID = itemID;
+            Quality = quality;
         }
-        public Amulet(string ItemID, string Design, string Quality)
+        public Amulet(string itemID, Level quality, string design)
         {
+            ItemID = itemID;
+            Design = design;
+            Quality = quality;
         }
         public override string ToString()
         {

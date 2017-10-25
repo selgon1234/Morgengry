@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class Book
+    public class Book
     {
         string ItemID;
         string Titel;
