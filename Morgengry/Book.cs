@@ -25,7 +25,7 @@ namespace Morgengry
         }
         public override string ToString()
         {
-            return "";
+            return "ItemId: 1," + " Title: ," + " " + "Price: 0";
         }
     }
 }
