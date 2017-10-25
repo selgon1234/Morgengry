@@ -16,6 +16,7 @@ namespace Morgengry
         public Amulet(string itemID)
         {
             ItemID = itemID;
+            Quality = Level.medium;
         }
         public Amulet(string itemID, Level quality)
         {
@@ -30,7 +31,7 @@ namespace Morgengry
         }
         public override string ToString()
         {
-            return "";
+            return "ItemId: " + ItemID + "," + " " + "Quality: " + Quality + "," + " " + "Design: " + Design;
         }
     }
 }
