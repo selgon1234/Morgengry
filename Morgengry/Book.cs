@@ -6,24 +6,20 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Book
+    public class Book : Merchandise
     {
-        string ItemID;
-        string Titel;
-        double Price;
-       
-        public Book(string itemID)
+        public string Titel;
+        public double Price;
+
+        public Book(string itemID) : base(itemID)
         {
-            ItemID = itemID;
         }
-        public Book(string itemID, string titel)
+        public Book(string itemID, string titel) : base(itemID)
         {
-            ItemID = itemID;
             Titel = titel;
         }
-        public Book(string itemID, string titel, double price)
+        public Book(string itemID, string titel, double price) : base(itemID)
         {
-            ItemID = itemID;
             Titel = titel;
             Price = price;
         }

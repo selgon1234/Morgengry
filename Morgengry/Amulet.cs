@@ -6,26 +6,22 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        string ItemID;
         string Design;
         public enum Level { low, medium, high}
         Level Quality;
 
-        public Amulet(string itemID)
+        public Amulet(string itemID) : base(itemID)
         {
-            ItemID = itemID;
             Quality = Level.medium;
         }
-        public Amulet(string itemID, Level quality)
+        public Amulet(string itemID, Level quality) : base(itemID)
         {
-            ItemID = itemID;
             Quality = quality;
         }
-        public Amulet(string itemID, Level quality, string design)
+        public Amulet(string itemID, Level quality, string design) : base(itemID)
         {
-            ItemID = itemID;
             Design = design;
             Quality = quality;
         }
