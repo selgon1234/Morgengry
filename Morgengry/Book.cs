@@ -8,24 +8,27 @@ namespace Morgengry
 {
     public class Book : Merchandise
     {
-        public string Titel;
+        public string Title;
         public double Price;
 
-        public Book(string itemID) : base(itemID)
+        public Book(string itemID)
         {
+            ItemId = itemID;
         }
-        public Book(string itemID, string titel) : base(itemID)
+        public Book(string itemID, string titel)
         {
-            Titel = titel;
+            ItemId = itemID;
+            Title = titel;
         }
-        public Book(string itemID, string titel, double price) : base(itemID)
+        public Book(string itemID, string titel, double price)
         {
-            Titel = titel;
+            ItemId = itemID;
+            Title = titel;
             Price = price;
         }
         public override string ToString()
         {
-            return "ItemId: " + ItemID + "," + " " + "Title: " + Titel + "," + " " + "Price: " + Price;
+            return "ItemId: " + ItemId + "," + " " + "Title: " + Title + "," + " " + "Price: " + Price;
         }
     }
 }

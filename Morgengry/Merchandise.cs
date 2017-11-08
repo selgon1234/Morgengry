@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Merchandise
+    public abstract class Merchandise
     {
-        public string ItemID { get; set; }
-
-        public Merchandise(string itemID)
-        {
-            ItemID = itemID;
-        }
+        public string ItemId;
     }
 }
